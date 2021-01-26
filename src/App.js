@@ -21,17 +21,14 @@ function App() {
 
   const [query, setQuery] = useState("")
   const [weather, setWeather] = useState({})
-  let [loading, setLoading] = useState(false)
 
   const search = evt => {
     if(evt.key === "Enter") {
-      setLoading(true)
       fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
       .then(res => res.json())
       .then(data => {
         setWeather(data)
         setQuery('')
-          setLoading(false)
 
       })
     }
@@ -169,26 +166,7 @@ function App() {
     
   } 
   
- const load = (<>
- <div className="content">
-    <div className="planet">
-       <div className="ring"></div>
-          <div className="cover-ring"></div>
-       <div className="spots">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
- 
-       </div>
-    </div>
-    <p>loading</p>
- </div></>)
-
-  return (
+ return (
     <main style={style}>
       <input 
         type="text" 
@@ -212,7 +190,6 @@ function App() {
      ) : null}
 
      {weather.cod === "404" ? <p className="error">Nie znaleziono takiego miasta</p> : null}
-     {loading ? load : null }
      </main>
    
   );
