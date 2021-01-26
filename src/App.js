@@ -9,6 +9,7 @@ import WhiteClouds from './assets/white_clouds.png'
 import SunWithClouds from './assets/sunWithClouds.png'
 import Mist from './assets/mist.png'
 
+let loading = false
 
 const api = {
   key: "370248df3fb186475695c929ed25a2fd",
@@ -28,7 +29,8 @@ function App() {
       .then(data => {
         setWeather(data)
         setQuery('')
-        // console.log(data.weather[0].main)
+        // console.log(data)
+        loading = false
 
       })
     }
@@ -166,8 +168,24 @@ function App() {
     
   } 
   
-  
-
+ const load = (<>
+ <div className="content">
+    <div className="planet">
+       <div className="ring"></div>
+          <div className="cover-ring"></div>
+       <div className="spots">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+ 
+       </div>
+    </div>
+    <p>loading</p>
+ </div></>)
 
   return (
     <main style={style}>
@@ -192,7 +210,8 @@ function App() {
        </div>
      ) : null}
 
-     {weather.cod === "404" ? "Nie znaleziono takiego miasta" : null}
+     {weather.cod === "404" ? <p className="error">Nie znaleziono takiego miasta</p> : null}
+     {loading ? load : null }
      </main>
    
   );
