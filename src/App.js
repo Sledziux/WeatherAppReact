@@ -9,7 +9,7 @@ import WhiteClouds from './assets/white_clouds.png'
 import SunWithClouds from './assets/sunWithClouds.png'
 import Mist from './assets/mist.png'
 
-let loading = false
+
 
 const api = {
   key: "370248df3fb186475695c929ed25a2fd",
@@ -21,16 +21,17 @@ function App() {
 
   const [query, setQuery] = useState("")
   const [weather, setWeather] = useState({})
+  let [loading, setLoading] = useState(false)
 
   const search = evt => {
     if(evt.key === "Enter") {
+      setLoading(true)
       fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
       .then(res => res.json())
       .then(data => {
         setWeather(data)
         setQuery('')
-        // console.log(data)
-        loading = false
+          setLoading(false)
 
       })
     }
