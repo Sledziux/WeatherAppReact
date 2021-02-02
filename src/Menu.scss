@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,
+     rgba(72,164,200,1) 0%,rgba(234,227,216,1) 50%, rgba(173,73,17,1)100%);
+     color: #363434;
+
+     .text{
+         width: 100%;
+         text-align: center;
+         text-transform: uppercase;
+         h1{
+             font-weight: bold;
+             font-size: 35px;
+         }
+
+         h2{
+             font-weight: normal;
+             font-style: italic;
+             font-size: 15px;
+         }
+     }
+
+     img{
+         height: 35vh;
+     }
+
+     button {
+        background-color: rgba(255,255,255, 0.37);
+        border: 1px solid #707070;
+        font-size: 15px;
+        padding: 15px 65px;
+        border-radius: 28px ;
+        font-weight: bold;        
+    }
+}
+
+.load{
+    width: 100%;
+}
+
