@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/WeatherAppReact/static/css/main.58844383.chunk.css",
+    "main.js": "/WeatherAppReact/static/js/main.2bd4c10a.chunk.js",
+    "main.js.map": "/WeatherAppReact/static/js/main.2bd4c10a.chunk.js.map",
+    "runtime-main.js": "/WeatherAppReact/static/js/runtime-main.a589b39f.js",
+    "runtime-main.js.map": "/WeatherAppReact/static/js/runtime-main.a589b39f.js.map",
+    "static/js/2.7b627842.chunk.js": "/WeatherAppReact/static/js/2.7b627842.chunk.js",
+    "static/js/2.7b627842.chunk.js.map": "/WeatherAppReact/static/js/2.7b627842.chunk.js.map",
+    "static/js/3.94909156.chunk.js": "/WeatherAppReact/static/js/3.94909156.chunk.js",
+    "static/js/3.94909156.chunk.js.map": "/WeatherAppReact/static/js/3.94909156.chunk.js.map",
+    "index.html": "/WeatherAppReact/index.html",
+    "static/css/main.58844383.chunk.css.map": "/WeatherAppReact/static/css/main.58844383.chunk.css.map",
+    "static/js/2.7b627842.chunk.js.LICENSE.txt": "/WeatherAppReact/static/js/2.7b627842.chunk.js.LICENSE.txt",
+    "static/media/FXF.32dd41d4.png": "/WeatherAppReact/static/media/FXF.32dd41d4.png",
+    "static/media/storm.91a64de7.png": "/WeatherAppReact/static/media/storm.91a64de7.png",
+    "static/media/sun.ba84081c.png": "/WeatherAppReact/static/media/sun.ba84081c.png",
+    "static/media/sunWithClouds.343c0743.png": "/WeatherAppReact/static/media/sunWithClouds.343c0743.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a589b39f.js",
+    "static/js/2.7b627842.chunk.js",
+    "static/css/main.58844383.chunk.css",
+    "static/js/main.2bd4c10a.chunk.js"
+  ]
+}
